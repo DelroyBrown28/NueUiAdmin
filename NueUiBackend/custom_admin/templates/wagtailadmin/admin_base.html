@@ -1,0 +1,11 @@
+{% extends "wagtailadmin/admin_base.html" %}
+{% load static %}
+
+<!-- @update: Favicon -->
+{% block branding_favicon %}
+<link rel="shortcut icon" href="{% static '' %}" />
+{% endblock %}
+
+
+<!-- @update: Branding/Tab Title -->
+{% block branding_title %}NueUi CMS{% endblock %}

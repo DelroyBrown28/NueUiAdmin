@@ -1,0 +1,11 @@
+{% extends "admin/base_site.html" %}
+
+<!-- @update: Business admin site name -->
+{% block title %}{{ title }} | Business Admin{% endblock %}
+
+<!-- @update: Business admin -->
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Business Admin</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

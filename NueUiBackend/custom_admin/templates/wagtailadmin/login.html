@@ -1,0 +1,16 @@
+{% extends "wagtailadmin/login.html" %}
+{% load i18n wagtailadmin_tags %}
+
+<!-- @update: Update welcome message -->
+{% block branding_login %}Website Admin{% endblock %}
+
+{% block above_login %} If you are not Frank you should not be here! {% endblock %}
+
+
+<li class="submit">
+    {% block submit_buttons %}
+    <button type="submit" class="button button-longrunning" data-clicked-text="{% trans 'Just a sec…' %}">{% icon name="spinner" %}<em>{% trans 'Let me in!' %}</em></button>
+    <a href="/business-admin/" class="button button-longrunning" data-clicked-text="{% trans 'Just a sec…' %}">{% icon name="spinner" %}<em>{% trans 'Business Login' %}</em></a>
+    {% endblock %}
+</li>
+
