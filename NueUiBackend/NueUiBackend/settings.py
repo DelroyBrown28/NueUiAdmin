@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     # My Apps
     'custom_admin',
 
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
